@@ -1,0 +1,19 @@
+[package]
+name = "timescan"
+version = "0.1.0"
+authors = ["Adam Jensen <adam@acj.sh>"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/acj/timescan"
+description = "Find timestamps in a string or stream of bytes"
+readme = "README.md"
+keywords = ["time", "timestamp", "scanner"]
+categories = ["date-and-time", "parsing", "command-line-interface"]
+exclude = [
+    ".github/*",
+]
+
+[dependencies]
+anyhow = "1.0"
+chrono = { version = "0.4.24", default-features = false, features = ["clock"] }
+regex = "1.9.5"
